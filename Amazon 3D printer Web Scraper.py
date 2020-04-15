@@ -33,14 +33,14 @@ def send_mail():
         server.starttls()
         server.ehlo()
 
-        server.login('afaceri117@gmail.com', 'uziwsvwhldnhofap')
+        server.login('emialaccount', 'erwt-ert-wet-tew')
 
         subject = '3D printer price drop!!'
         body = 'Check out the new price drop on this accessory :)'
         msg = f"subject {subject}\n\n{body}"
         server.sendmail(
             'random@email.com',
-            'afaceri117@gmail.com',
+            'emialaccount',
             msg
         )
 
